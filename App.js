@@ -22,6 +22,7 @@ const App = () => (
       <Image source={logo} />
       <Image source={logo} />
       <Image source={logo} />
+      <Text style={{fontSize: 20}}>Meio</Text>
       <Image source={logo} />
       <Image source={logo} />
       <Image source={logo} />
