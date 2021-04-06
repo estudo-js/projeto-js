@@ -19,6 +19,7 @@ const App = () => (
     </View>
     <View>
     <ScrollView>
+    <Text style={{fontSize: 20}}>Salve</Text>
       <Image source={logo} />
       <Image source={logo} />
       <Image source={logo} />
