@@ -7,6 +7,10 @@ const logo = {
   height: 64
 };
 
+const dizerOi = () => {
+  return 'oi'
+  console.log(dizerOi)
+}
 
 const App = () => (
   <View style={styles.screen}>
