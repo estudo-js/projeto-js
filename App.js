@@ -35,6 +35,7 @@ const App = () => (
     <Text style={{fontSize: 20}}>Salve</Text>
       <Image source={logo} />
       <Image source={logo} />
+      <Text style={{fontSize: 20}}>Ssubsub</Text>
       <Image source={logo} />
       <Image source={logo} />
       <Text style={{ fontSize: 20 }}>React Native</Text>
