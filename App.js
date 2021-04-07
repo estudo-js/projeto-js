@@ -1,14 +1,27 @@
+/*  ---   Projeto 1 em Javascript, com React Native: App básico ---  */
+/*    
+/*      Objetivo: Praticar as ferramentas que o react native porporcionam
+/*      para a consterução da estrutura, do eslilo e dinâmica de um App
+/*
+/*      Autores: Igor Amorim dos Santos e Wesley Amorim dos Santos
+/*      
+/*********************************************************************/
+
+/*Importando as bibliotecas do react e react native*/
+/* Importando as componentes e elementos disponiveis pelo react native */
 import React from "react";
 import { StyleSheet, Text, View, TextInput, Button, ScrollView, Image } from "react-native";
 
+/* definindo uma variável constante que recebe um objeto js */
 const logo = {
-  uri: 'https://reactnative.dev/img/tiny_logo.png',
-  width: 64,
-  height: 64
-};
+  uri: 'https://reactnative.dev/img/tiny_logo.png', //endereço da imagem de um logo
+  width: 64,       // largura da figura
+  height: 64      // altura da figura
+};             // fim da caixa que dos atributos do objeto
 
-
-const App = () => (
+/* define uma função anonima (sintaxe arrow) armazenada na variavel contante "App" */
+/* Essa função vai renderizar alguns elementos, semelhantes a elementos html */
+const App = () => (   
   <View style={styles.screen}>
     <View>
       <Text style={styles.title}>Lista de Objetivos</Text>
@@ -32,13 +45,14 @@ const App = () => (
   </View>
 );
 
+/* Regiao responsavel pela criação dos estilos do código,(StyleSheet) semelhante a CSS */
 const styles = StyleSheet.create({
-  screen: {
+  screen: { // estilos do conteiner (view) principal  que contem os elementos da tela
     flex: 1,
     padding: 30,
     backgroundColor: "#eaeaea"
   },
-  title: {
+  title: { //estilos do titulo da tela
     marginTop: 16,
     paddingVertical: 8,
     borderWidth: 4,
@@ -63,4 +77,5 @@ const styles = StyleSheet.create({
   }
 });
 
+// export defaut App, comentário
 export default App;
