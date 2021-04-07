@@ -37,8 +37,6 @@ const App = () => (
       <Image source={logo} />
       <Image source={logo} />
       <Image source={logo} />
-      <Image source={logo} />
-      <Image source={logo} />
       <Text style={{ fontSize: 20 }}>React Native</Text>
     </ScrollView>  
     </View>
