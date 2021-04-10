@@ -6,21 +6,32 @@
 /*      Autores: Igor Amorim dos Santos e Wesley Amorim dos Santos
 /*      
 /*********************************************************************/
+/*********************************************************************/
+
 
 /*Importando as bibliotecas do react e react native*/
 /* Importando as componentes e elementos disponiveis pelo react native */
 import React from "react";
 import { StyleSheet, Text, View, TextInput, Button, ScrollView, Image } from "react-native";
+import modulo_figura_logo from "./modulo_figura_logo";
 
-/* definindo uma variável constante que recebe um objeto js */
-const logo = {
-  uri: 'https://reactnative.dev/img/tiny_logo.png', //endereço da imagem de um logo
-  width: 64,       // largura da figura
-  height: 64      // altura da figura
-};             // fim da caixa que dos atributos do objeto
+/************************/
+/************************/
+/*DEFINIÇÃO DOS MODULOS */
+/************************/
+//
+//
 
-/* define uma função anonima (sintaxe arrow) armazenada na variavel contante "App" */
+const modulologo = require("./modulo_figura_logo")
+
+
+/*****************************************************************************/
+/*****************************************************************************/
 /* Essa função vai renderizar alguns elementos, semelhantes a elementos html */
+/*****************************************************************************/
+//
+//
+
 const App = () => (   
   <View style={styles.screen}>
     <View>
@@ -33,17 +44,24 @@ const App = () => (
     <View>
     <ScrollView>
     <Text style={{fontSize: 20}}>Salve</Text>
-      <Image source={logo} />
-      <Image source={logo} />
-      <Image source={logo} />
-      <Image source={logo} />
+      <Image source={modulologo} />
+      <Image source={modulologo} />
+      <Image source={modulologo} />
+      <Image source={modulologo} />
+      <Image source={modulologo} />
       <Text style={{ fontSize: 20 }}>React Native</Text>
     </ScrollView>  
     </View>
   </View>
 );
 
+/***************************************************************************************/
+/************************************************************************************* */
 /* Regiao responsavel pela criação dos estilos do código,(StyleSheet) semelhante a CSS */
+/************************************************************************************* */
+//
+//
+
 const styles = StyleSheet.create({
   screen: { // estilos do conteiner (view) principal  que contem os elementos da tela
     flex: 1,
