@@ -1,0 +1,4 @@
+1- baixar a extensão de python ms-python.python
+2- baixar a extensão ms-toolsai.jupyter
+3- escrever o codigo de python em um arquivo com extensão .py
+4- apertar Shift + Enter para rodar o código
