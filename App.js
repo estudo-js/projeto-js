@@ -11,35 +11,35 @@
 
 /*Importando as bibliotecas do react e react native*/
 /* Importando as componentes e elementos disponiveis pelo react native */
-import React from "react";
-import { StyleSheet, Text, View, TextInput, Button, ScrollView, Image } from "react-native";
+import React, {useState} from "react";
+import { StyleSheet, Text, View, TextInput, Button, ScrollView, Image, FlatList } from "react-native";
 import modulo_figura_logo from "./modulo_figura_logo";
 
-/************************/
-/************************/
-/*DEFINIÇÃO DOS MODULOS */
-/************************/
-//
-//
+//Importar intens proprios
+import itemMeta from './componentes/itemMeta'
 
-const modulologo = require("./modulo_figura_logo")
-
+export default function App() {  
+  
+const modulologo = require("./modulo_figura_logo") 
 
 /*****************************************************************************/
 /*****************************************************************************/
-/* Essa função vai renderizar alguns elementos, semelhantes a elementos html */
+/* Essa parte vai renderizar alguns elementos, semelhantes a elementos html */
 /*****************************************************************************/
 //
 //
-
-const App = () => (   
+  
+  return(
   <View style={styles.screen}>
     <View>
       <Text style={styles.title}>Lista de Objetivos</Text>
     </View>
     <View style={styles.entrada}>
-      <TextInput placeholder = "Objetivos" style = {styles.entrada_texto}/>
-      <Button title="Adicionar"/>
+      <TextInput 
+      placeholder = "Objetivos" 
+      style = {styles.entrada_texto}
+      />
+      <Button title="Adicionar" />
     </View>
     <View>
     <ScrollView>
@@ -54,6 +54,7 @@ const App = () => (
     </View>
   </View>
 );
+}
 
 /***************************************************************************************/
 /************************************************************************************* */
@@ -93,5 +94,5 @@ const styles = StyleSheet.create({
   }
 });
 
-// export defaut App, comentário
-export default App;
+
+
