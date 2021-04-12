@@ -22,6 +22,7 @@ import modulo_figura_logo from "./modulo_figura_logo";
 //
 //
 
+/* módulo do objeto figura, logo*/
 const modulologo = require("./modulo_figura_logo")
 
 
